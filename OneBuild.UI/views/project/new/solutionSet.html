@@ -1,0 +1,33 @@
+﻿<table id="sln-table" class="easyui-treegrid" style="width:600px;height:400px"
+       data-options="idField:'id',treeField:'name',fit:true,striped:true,rownumbers:true,fitColumns:true">
+    <thead>
+        <tr>
+            <th data-options="field:'projname',width:180">项目名</th>
+            <th data-options="field:'projtype',width:60">项目类型</th>
+            <th data-options="field:'projsource',width:80">项目地址</th>
+            <th data-options="field:'projout',width:80">输出地址</th>
+            <th data-options="field:'projbuildtype',width:80">build类型</th>
+        </tr>
+    </thead>
+</table> 
+
+<script>
+    $("#sln-table").treegrid(
+    {
+        toolbar: [{
+            iconCls: 'icon-add',
+            text:"添加",
+            handler: function ()
+            {
+                alert('编辑按钮')
+            }
+        }, '-', {
+            iconCls: 'icon-remove',
+            text:"移除",
+            handler: function ()
+            {
+                alert('帮助按钮')
+            }
+        }]
+    });
+</script>

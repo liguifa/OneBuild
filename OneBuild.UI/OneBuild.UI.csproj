@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFDA5A3F-B90B-4701-A06D-AFF106B038B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OneBuild.UI</RootNamespace>
+    <AssemblyName>OneBuild</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Easyui\EasyUI.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="static\easyui\jquery.min.map" />
+    <None Include="static\easyui\themes\metro-blue\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="initfile.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Main.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="static\css\newProjectLayout.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="static\easyui\easyloader.js" />
+    <Content Include="static\easyui\jquery-1.8.0.min.js" />
+    <Content Include="static\easyui\jquery.easyui.min.js" />
+    <Content Include="static\easyui\locale\easyui-lang-af.js" />
+    <Content Include="static\easyui\locale\easyui-lang-ar.js" />
+    <Content Include="static\easyui\locale\easyui-lang-bg.js" />
+    <Content Include="static\easyui\locale\easyui-lang-ca.js" />
+    <Content Include="static\easyui\locale\easyui-lang-cs.js" />
+    <Content Include="static\easyui\locale\easyui-lang-cz.js" />
+    <Content Include="static\easyui\locale\easyui-lang-da.js" />
+    <Content Include="static\easyui\locale\easyui-lang-de.js" />
+    <Content Include="static\easyui\locale\easyui-lang-el.js" />
+    <Content Include="static\easyui\locale\easyui-lang-en.js" />
+    <Content Include="static\easyui\locale\easyui-lang-es.js" />
+    <Content Include="static\easyui\locale\easyui-lang-fr.js" />
+    <Content Include="static\easyui\locale\easyui-lang-it.js" />
+    <Content Include="static\easyui\locale\easyui-lang-jp.js" />
+    <Content Include="static\easyui\locale\easyui-lang-nl.js" />
+    <Content Include="static\easyui\locale\easyui-lang-pl.js" />
+    <Content Include="static\easyui\locale\easyui-lang-pt_BR.js" />
+    <Content Include="static\easyui\locale\easyui-lang-ru.js" />
+    <Content Include="static\easyui\locale\easyui-lang-sv_SE.js" />
+    <Content Include="static\easyui\locale\easyui-lang-tr.js" />
+    <Content Include="static\easyui\locale\easyui-lang-zh_CN.js" />
+    <Content Include="static\easyui\locale\easyui-lang-zh_TW.js" />
+    <Content Include="static\easyui\plugins\jquery.accordion.js" />
+    <Content Include="static\easyui\plugins\jquery.calendar.js" />
+    <Content Include="static\easyui\plugins\jquery.combo.js" />
+    <Content Include="static\easyui\plugins\jquery.combobox.js" />
+    <Content Include="static\easyui\plugins\jquery.combogrid.js" />
+    <Content Include="static\easyui\plugins\jquery.combotree.js" />
+    <Content Include="static\easyui\plugins\jquery.datagrid.js" />
+    <Content Include="static\easyui\plugins\jquery.datebox.js" />
+    <Content Include="static\easyui\plugins\jquery.datetimebox.js" />
+    <Content Include="static\easyui\plugins\jquery.dialog.js" />
+    <Content Include="static\easyui\plugins\jquery.draggable.js" />
+    <Content Include="static\easyui\plugins\jquery.droppable.js" />
+    <Content Include="static\easyui\plugins\jquery.form.js" />
+    <Content Include="static\easyui\plugins\jquery.layout.js" />
+    <Content Include="static\easyui\plugins\jquery.linkbutton.js" />
+    <Content Include="static\easyui\plugins\jquery.menu.js" />
+    <Content Include="static\easyui\plugins\jquery.menubutton.js" />
+    <Content Include="static\easyui\plugins\jquery.messager.js" />
+    <Content Include="static\easyui\plugins\jquery.numberbox.js" />
+    <Content Include="static\easyui\plugins\jquery.numberspinner.js" />
+    <Content Include="static\easyui\plugins\jquery.pagination.js" />
+    <Content Include="static\easyui\plugins\jquery.panel.js" />
+    <Content Include="static\easyui\plugins\jquery.parser.js" />
+    <Content Include="static\easyui\plugins\jquery.progressbar.js" />
+    <Content Include="static\easyui\plugins\jquery.propertygrid.js" />
+    <Content Include="static\easyui\plugins\jquery.resizable.js" />
+    <Content Include="static\easyui\plugins\jquery.searchbox.js" />
+    <Content Include="static\easyui\plugins\jquery.slider.js" />
+    <Content Include="static\easyui\plugins\jquery.spinner.js" />
+    <Content Include="static\easyui\plugins\jquery.splitbutton.js" />
+    <Content Include="static\easyui\plugins\jquery.tabs.js" />
+    <Content Include="static\easyui\plugins\jquery.timespinner.js" />
+    <Content Include="static\easyui\plugins\jquery.tooltip.js" />
+    <Content Include="static\easyui\plugins\jquery.tree.js" />
+    <Content Include="static\easyui\plugins\jquery.treegrid.js" />
+    <Content Include="static\easyui\plugins\jquery.validatebox.js" />
+    <Content Include="static\easyui\plugins\jquery.window.js" />
+    <Content Include="static\easyui\themes\icon.css" />
+    <Content Include="static\easyui\themes\icons\admin.png" />
+    <Content Include="static\easyui\themes\icons\author.png" />
+    <Content Include="static\easyui\themes\icons\back.png" />
+    <Content Include="static\easyui\themes\icons\blank.gif" />
+    <Content Include="static\easyui\themes\icons\blank.png" />
+    <Content Include="static\easyui\themes\icons\canceAlll.png" />
+    <Content Include="static\easyui\themes\icons\cancel.png" />
+    <Content Include="static\easyui\themes\icons\comany_company.png" />
+    <Content Include="static\easyui\themes\icons\comp_add.png" />
+    <Content Include="static\easyui\themes\icons\comp_manage.png" />
+    <Content Include="static\easyui\themes\icons\creat.png" />
+    <Content Include="static\easyui\themes\icons\cut.png" />
+    <Content Include="static\easyui\themes\icons\delete.png" />
+    <Content Include="static\easyui\themes\icons\department.png" />
+    <Content Include="static\easyui\themes\icons\edit_add.png" />
+    <Content Include="static\easyui\themes\icons\edit_remove.png" />
+    <Content Include="static\easyui\themes\icons\exit.png" />
+    <Content Include="static\easyui\themes\icons\file.png" />
+    <Content Include="static\easyui\themes\icons\filesave.png" />
+    <Content Include="static\easyui\themes\icons\filter.png" />
+    <Content Include="static\easyui\themes\icons\help.png" />
+    <Content Include="static\easyui\themes\icons\inductCompany.png" />
+    <Content Include="static\easyui\themes\icons\info.png" />
+    <Content Include="static\easyui\themes\icons\input.png" />
+    <Content Include="static\easyui\themes\icons\large_chart.png" />
+    <Content Include="static\easyui\themes\icons\large_clipart.png" />
+    <Content Include="static\easyui\themes\icons\large_picture.png" />
+    <Content Include="static\easyui\themes\icons\large_shapes.png" />
+    <Content Include="static\easyui\themes\icons\large_smartart.png" />
+    <Content Include="static\easyui\themes\icons\libm.png" />
+    <Content Include="static\easyui\themes\icons\mini_add.png" />
+    <Content Include="static\easyui\themes\icons\mini_edit.png" />
+    <Content Include="static\easyui\themes\icons\mini_refresh.png" />
+    <Content Include="static\easyui\themes\icons\no.png" />
+    <Content Include="static\easyui\themes\icons\ok.png" />
+    <Content Include="static\easyui\themes\icons\open.png" />
+    <Content Include="static\easyui\themes\icons\pencil.png" />
+    <Content Include="static\easyui\themes\icons\preview.png" />
+    <Content Include="static\easyui\themes\icons\preview2.png" />
+    <Content Include="static\easyui\themes\icons\print.png" />
+    <Content Include="static\easyui\themes\icons\progress.png" />
+    <Content Include="static\easyui\themes\icons\redo.png" />
+    <Content Include="static\easyui\themes\icons\reload.png" />
+    <Content Include="static\easyui\themes\icons\reSend.png" />
+    <Content Include="static\easyui\themes\icons\reset.png" />
+    <Content Include="static\easyui\themes\icons\save.png" />
+    <Content Include="static\easyui\themes\icons\saveas.png" />
+    <Content Include="static\easyui\themes\icons\search.png" />
+    <Content Include="static\easyui\themes\icons\see.png" />
+    <Content Include="static\easyui\themes\icons\selectAll.png" />
+    <Content Include="static\easyui\themes\icons\service_manager .png" />
+    <Content Include="static\easyui\themes\icons\set.png" />
+    <Content Include="static\easyui\themes\icons\Speed.png" />
+    <Content Include="static\easyui\themes\icons\staffList.png" />
+    <Content Include="static\easyui\themes\icons\start.png" />
+    <Content Include="static\easyui\themes\icons\stop.png" />
+    <Content Include="static\easyui\themes\icons\sum.png" />
+    <Content Include="static\easyui\themes\icons\sys_setUp.png" />
+    <Content Include="static\easyui\themes\icons\test_libriary.png" />
+    <Content Include="static\easyui\themes\icons\time.png" />
+    <Content Include="static\easyui\themes\icons\tip.png" />
+    <Content Include="static\easyui\themes\icons\undo.png" />
+    <Content Include="static\easyui\themes\icons\user_manage.png" />
+    <Content Include="static\easyui\themes\metro-blue\accordion.css" />
+    <Content Include="static\easyui\themes\metro-blue\calendar.css" />
+    <Content Include="static\easyui\themes\metro-blue\combo.css" />
+    <Content Include="static\easyui\themes\metro-blue\combobox.css" />
+    <Content Include="static\easyui\themes\metro-blue\datagrid.css" />
+    <Content Include="static\easyui\themes\metro-blue\datebox.css" />
+    <Content Include="static\easyui\themes\metro-blue\dialog.css" />
+    <Content Include="static\easyui\themes\metro-blue\easyui.css" />
+    <Content Include="static\easyui\themes\metro-blue\images\accordion_arrows.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\blank.gif" />
+    <Content Include="static\easyui\themes\metro-blue\images\calendar_arrows.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\combo_arrow.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\datagrid_icons.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\datebox_arrow.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\layout_arrows.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\linkbutton_bg.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\loading.gif" />
+    <Content Include="static\easyui\themes\metro-blue\images\menu_arrows.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\messager_icons.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\pagination_icons.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\panel_tools.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\searchbox_button.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\slider_handle.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\spinner_arrows.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\tabs_icons.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\tree_icons.png" />
+    <Content Include="static\easyui\themes\metro-blue\images\validatebox_warning.png" />
+    <Content Include="static\easyui\themes\metro-blue\layout.css" />
+    <Content Include="static\easyui\themes\metro-blue\linkbutton.css" />
+    <Content Include="static\easyui\themes\metro-blue\menu.css" />
+    <Content Include="static\easyui\themes\metro-blue\menubutton.css" />
+    <Content Include="static\easyui\themes\metro-blue\messager.css" />
+    <Content Include="static\easyui\themes\metro-blue\pagination.css" />
+    <Content Include="static\easyui\themes\metro-blue\panel.css" />
+    <Content Include="static\easyui\themes\metro-blue\progressbar.css" />
+    <Content Include="static\easyui\themes\metro-blue\propertygrid.css" />
+    <Content Include="static\easyui\themes\metro-blue\searchbox.css" />
+    <Content Include="static\easyui\themes\metro-blue\slider.css" />
+    <Content Include="static\easyui\themes\metro-blue\spinner.css" />
+    <Content Include="static\easyui\themes\metro-blue\splitbutton.css" />
+    <Content Include="static\easyui\themes\metro-blue\tabs.css" />
+    <Content Include="static\easyui\themes\metro-blue\tooltip.css" />
+    <Content Include="static\easyui\themes\metro-blue\tree.css" />
+    <Content Include="static\easyui\themes\metro-blue\validatebox.css" />
+    <Content Include="static\easyui\themes\metro-blue\window.css" />
+    <Content Include="static\js\main.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="views\project\new\layout.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="views\project\new\projectSet.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="views\project\new\solutionSet.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OneBuild.Common\OneBuild.Common.csproj">
+      <Project>{1100c4e9-24af-411d-bde7-58dd1692efc9}</Project>
+      <Name>OneBuild.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OneBuild.Config\OneBuild.Config.csproj">
+      <Project>{bb7bdc3e-2499-4df4-823b-1c755c33bd34}</Project>
+      <Name>OneBuild.Config</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

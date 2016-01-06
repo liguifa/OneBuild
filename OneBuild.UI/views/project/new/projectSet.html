@@ -1,0 +1,12 @@
+﻿<ul>
+    <li><label>项目名：</label><input id="projname" type="text" />设置项目名以识别项目</li>
+</ul>
+
+
+<script>
+    function BuildProject()
+    {
+        var proj = "{\"proj-name\":\"" + $("projname") + "\"}";
+        window.external.NewProject(proj);
+    }
+</script>

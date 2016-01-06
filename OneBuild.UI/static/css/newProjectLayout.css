@@ -1,0 +1,64 @@
+﻿html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#left {
+    width: 20%;
+    height: 95%;
+    margin: 0px;
+    float: left;
+}
+
+#right {
+    width: 80%;
+    height: 95%;
+    margin: 0px;
+    float: right;
+}
+
+.stepProgress {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 5%;
+    clear: both;
+}
+
+#step {
+    background: #efefef;
+    border: 1px solid #ccc;
+    height: 100%;
+}
+
+    #step div {
+        margin-top: 5px;
+        margin-right: 10px;
+        float: right;
+    }
+
+.avtive {
+    background: #efefef;
+    border: 1px solid #ccc;
+    height: 30px;
+    padding-top: 15px;
+}
+
+#stepNav {
+    margin: 0px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+    #stepNav li {
+        padding-left: 20%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+#step li a {
+    font-size: 40px;
+}
